@@ -1,0 +1,168 @@
+*{
+  font-family: sans-serif;
+
+  margin: 0;
+  padding: 0;
+
+}
+
+.search{
+
+position:fixed;
+top: 0;
+left: 0;
+width: 100%;
+text-align: center;
+background-color:#292929;
+padding: 20px 10px 30px 10px;
+overflow: hidden;
+z-index: 1;
+
+}
+
+.search input{
+  position: absolute;
+  left: 10%;
+  width: 30%;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  background-color: #5f5b5b;
+  color: aliceblue;
+}
+
+button{
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  border-radius: 10px;
+  background-color: rgb(190, 31, 116);
+  top: 30%;
+  left: 43%;
+}
+
+.log{
+
+left: 75%;
+background-color: rgb(29, 107, 87);
+cursor: pointer;
+
+}
+
+.reg{
+  left: 80%;
+  background-color: rgb(29, 107, 87);
+  cursor: pointer;
+}
+
+#name{
+  position: absolute;
+  top: 1%;
+  float: right;
+  right: 2%;
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+}
+
+.rc{
+
+  position: relative;
+  margin-top: 150px;
+  left: 5%;
+  width: 60%;
+  height: auto;
+  background-color: aliceblue;
+  border: 2px solid gray;
+  text-align: left;
+  padding: 5px 5px 5px 20px;
+  color: gray;
+  font-weight: 600;
+  border-radius: 20px;
+
+}
+
+
+
+.card{
+
+  position: relative;
+  background-color: rgb(224, 219, 219);
+  text-align: center;
+  color: gray;
+  margin-top: 60px;
+  padding: 50px 20px 50px 20px;
+  width: 80%;
+  left: 10%;
+  cursor: pointer;
+  font-weight: 400;
+  font-weight: 14px;
+  border: 2px solid blueviolet;
+
+
+}
+
+.card h4{
+  position: absolute;
+  top: 6%;
+  left:2%;
+
+}
+
+.card h3{
+  position: absolute;
+  top: 60%;
+  left:2%;
+
+}
+
+ .card h5{
+
+  position: relative;
+  top:2%;
+  float: right;
+  right: 5%;
+ 
+}
+
+
+
+
+
+
+.card:hover{
+
+  padding: 45px;
+  color: white;
+  background-color: rgb(89, 28, 145);
+  transition: all 0.1s ease-in-out;
+
+
+}
+
+
+.footer{
+  position: relative;
+  margin-top: 200px;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background-color: #292929;
+  color: gray;
+
+
+}
+
+.footer h1{
+
+  position: absolute;
+  top: 40%;
+  left: 33%;
+  font-size: 190px;
+  color: rgb(22, 20, 20);
+
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login!</title>
+<style>
+
+    
+    body{
+            background-color: #181818;
+        }
+
+.con{
+    position: fixed;
+    top: 15%;
+    left: 30%;
+    width: 40%;
+    height: 500px;
+    background-color: #292929;
+    border-radius: 20px;
+    border: 4px solid aqua;
+    color: aqua;
+    font-size: 17px;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+
+input{
+    position: relative;
+    margin-top: 50px;
+    left: 2%;
+    width: 80%;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    background-color: black;
+    border: 2px solid gray;
+    color: gray;
+}
+
+a{
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    color: white;
+}
+
+button{
+
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+}
+
+
+
+</style>
+
+
+</head>
+
+<body>
+
+    <div class="con">
+
+        <h1>Login</h1>
+
+        <input type="text " placeholder="username" id="name" class="inp">
+        <input type="text " placeholder="password" id="pass" class="inp">
+
+        <a href="register.html">Don't have an account!..</a>
+
+        <button id="btn">login</button>
+
+
+
+    </div>
+
+
+    <script>
+        var name = localStorage.getItem("name");
+        var pass = localStorage.getItem("pass");
+
+        var gname = document.getElementById("name");
+        var gpass = document.getElementById("pass");
+
+        var btn = document.getElementById("btn");
+
+        btn.addEventListener("click",function(){
+            let gn = gname.value;
+            let gp = gpass.value;
+            if(gn==name){
+                if(gp==pass){
+
+                    window.location = "http://patrickweb.infinityfreeapp.com/parthiban/build/";
+                }
+                else{
+                alert("Please check the details!")
+            }
+            }
+            else{
+                alert("Please check the details!")
+            }
+        });
+
+    </script>
+
+
+
+
+</body>
+</html>
